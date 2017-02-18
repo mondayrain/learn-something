@@ -11,7 +11,7 @@
 
  GIFs only support 8 bits per pixel, or 256 colours per frame.
  
-#### File Format
+### File Format
 
  Start with a fixed-length header ("GIF87a" or "GIF89a").
  Followed by fixed-length Logical Screen Descriptor (size + other characteristics of logical scree    n)

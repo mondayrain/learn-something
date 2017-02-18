@@ -1,4 +1,4 @@
-#### Monotonic Function / Monotonicity
+# Monotonic Function / Monotonicity
 
 A **monotonic function** is a function between ordered sets that preserves or reverses the given order.
 
