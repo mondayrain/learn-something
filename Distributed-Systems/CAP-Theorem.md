@@ -10,11 +10,11 @@ Basically, the CAP theorem states that it is impossible for a distributed system
 
 **1) Consistency**
 
-Every read receives the most recent write, or an error
+Every read receives the most recent write, or an error.
 
 **2) Availability**
 
-Every request receives a non-error response (no guarantee that the response is the most recent write, though)
+Every request receives a non-error response (no guarantee that the response is the most recent write, though). Sometimes the guarantee required is that any algorithm used by the service must eventually terminate.
 
 **3) Partition Tolerance**
 
@@ -33,6 +33,8 @@ b) Only return a response if we have up-to-date info, otherwise return an error
 ### Misconceptions
 CAP shouldn't be misunderstood as having to choose between 2 and eschewing the third. In the absence of a network failure (e.g. when the distributed is running normally), both availability and consistency can be satisfied.
 
+To add, Consistency and Availability can be measured on a spectrum, while Partition Tolerance is quite binary (a definition on partition tolerance can vary, but in the end the system either supports partition tolerance or not).
+
 Rather, it's a question of what is most valuable to YOU when the network goes DOWN. That is the only time a trade-off needs to be made. In different situations, you may care more about consistency rather than availability and vice versa.
 
 #### Examples
@@ -44,3 +46,15 @@ Rather, it's a question of what is most valuable to YOU when the network goes DO
 **ACID** stands for Atomicity, Conisistency. Isolation, and Durability. It is a set of properties for database transactions, and traditional RDBMS systems tend to guarantee them. ACID systems (e.g. MySQL, etc) choose consistency over availability.
 
 **BASE** stands for Basically Available, Soft state, Eventual Consistency. It is a consistency model that choose availability over consistency: essentially, it informally guarantees that all accesses will _eventually_ return the most up-to-date value. This is called **eventual consistency**. This is common in the NoSQL movement.
+
+### CAP: Twelve Years Later
+
+In 2012, Eric Brewer wrote an article that appeared in Computer magazine, named "CAP Twelve Years Later: How the 'Rules' Have Changed".
+
+In it, he says that although the 2 of 3 formulation was always misleading (because it oversimplified), it served its purpose because it lead to a much wider array of systems being designed to explore the AP and CP systems. Now, however, the nuances mattered and it was important now to recognize that CAP only actually prohibited a tiny part of the design space: _perfect_ availability and _perfect_ consistency in the presence of partitioins, which are rare.
+
+Rather, asserts that by explicitly handling partitions, designers can optimize consistency and availability and achieve some trade-off of all three (rather than having to choose 2 of the 3).
+
+To quote, "The modern CAP goal should be to maximize combinations of consistency and availability that makes sense for the specific application. Such an approach incorporates plans for operation during a partition and recovery afterward".
+
+
