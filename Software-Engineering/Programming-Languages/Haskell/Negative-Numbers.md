@@ -5,15 +5,16 @@ We often have to enclose a negative number in parentheses. This is because negat
 The **-** operator is Haskell's only unary operator and we can't mix it with infix operators.
 
 For example,
-_ 2 + -3 _
+_2 + -3_
 will give the error:
 
 _Precedence parsing error, cannot mix "+' [infixl 6] and prefix '-' [infixl 6] in the same infix expression_
 
 So, if we want to use unary minus near an infix operator, we need to wrap the expression it applies to with a parentheses.
 
-_ 3 + (-3) _
-_ 3 + (-(13 * 37)) _
+_3 + (-3)_
+
+_3 + (-(13 * 37))_
 
 This avoids a parsing ambiguity.
 

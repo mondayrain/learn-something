@@ -6,11 +6,12 @@ A higher-precedence operator is applied before a lower-precedence one.
 
 You can use **ghci** to inspect the precendence levels of operators using the **:info** command:
 
-1```
+```
 :info(+)
 ```
 
-will out put:
+will output:
+
 ```
 class (Eq a, Show a) => Num a where
    (+) :: a -> a -> a
