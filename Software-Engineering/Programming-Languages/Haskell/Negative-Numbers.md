@@ -1,4 +1,4 @@
-# Negative Numbers
+# Haskell Negative Numbers
 
 We often have to enclose a negative number in parentheses. This is because negative numbers like "-3" aren't a "negative number", they're the number "3" with the **-** operator applied to it.
 

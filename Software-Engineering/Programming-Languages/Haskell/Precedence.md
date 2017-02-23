@@ -1,4 +1,4 @@
-# Precedence
+# Haskell Precedence
 
 Haskell assigns numeric precedence values to its operators, with 1 being the lowest precedence and 9 being the highest.
 
