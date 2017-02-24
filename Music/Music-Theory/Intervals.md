@@ -4,25 +4,62 @@
 
 Each interval can be **raised** or **lowered**. This lets us divide intervals into 2 groups:
 
-**Perfect intervals**: Unison, 4th, 5th, and Octave
+### Perfect intervals
+
+**Perfect intervals** include: Unison, 4th, 5th, and Octave
 
 Perfect intervals have nice, small integer frequency rations in **Pythagorean tuning** (a tuning system by Greek mathematician Pythagoras). They're _traditionally_ considered the most consonant intervals:
 
 P1 = 1:1
+
 P8 = 2:1
+
 P5 = 3:2
+
 P4 = 4:3
 
 When a perfect interval is raised by a half-step, it's called an **augmented** interval. If lowered by a half-step, it's called a **diminished** interval.
 
-**Major/Minor intervals**: 2nd, 3rd, 6th, and 7th
+### Major/Minor intervals
+**Major/Minor** intervals include: 2nd, 3rd, 6th, and 7th
 
 Major/minor intervals have more complex ratios:
 
 M2 = 9:8
+
 m7 = 16:9
 
 and so on and so forth. These intervals are by default referred to as "major" when untouched; if they are lowered by a half-step, then they are minor.
+
+### Basic Intervals & their Distance
+
+In order, the basic intervals progress as you add a half-step the the previous one:
+
+Unison
+
+Diminished or flat 2nd   
+
+(Perfect) 2nd           
+
+Minor 3rd                    
+
+Major 3rd                   
+
+Perfect 4th                
+
+Augmented 4th/Diminished 5th
+
+Perfect 5th                
+
+Minor 6th             
+
+Major 6th              
+
+Minor 7th               
+
+Major 7th                
+
+Octave                    
 
 ### More on Perfect Intervals
 

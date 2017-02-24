@@ -4,11 +4,11 @@ A **scale** is any way of dividing up the notes from the root note to the octave
 
 The difference between e.g. major and minor scales is just the distance between intervals, and there are consistent rules about those intervals.
 
-"Major" and "Minor" are **modes**. The technical mode names for them are **ionian** and **aeolian**.
+"Major" and "Minor" are **modes** of a **diatonic scale** (7-note scale with 5 whole steps and 2 half steps). The technical mode names for them are **ionian** and **aeolian**. The whole collection of diatonic scales can be divided in to seven different scales, or modes.
 
 ### Modes
 
-Since there are 6 different (non-flat) notes on a scale, there are 7 "modes". A **mode** is an alternative way to play a scale that gives it a different tone. For example, you can play the C scale in Ionian (aka Major) mode, Aeolian (aka minor) mode, and a bunch of other modes (overviewed below).
+Since there are 7 different pitches on a diatonic scale, there are 7 "modes". A **mode** is an alternative way to play a scale that gives it a different tone. For example, you can play the C scale in Ionian (aka Major) mode, Aeolian (aka minor) mode, and a bunch of other modes (overviewed below).
 
 Modes can be derived from the familiar major scale (which has a certain key signature) by starting on a different scale degree than the root note and playing it with the same intervals (e.g. starting on the 3rd note after C).
 
@@ -26,6 +26,18 @@ Dorian: D E F G A B C D
 Aeolian: A B C D E F G A
 
 and so on, and so forth.
+
+### Modes and the Diatonic Scale
+
+Another way to describe modes is that we're just changing the sequence of Tones and Semitones in a Diatonic scale. By definition, a diatonic scale has 5 whole tones and 2 semitones, and the semitones must be at least 2 or 3 whole tones apart. Each mode is just a different sequence in which we can place the intervals while adhering to those rules.
+
+e.g.
+
+Ionian: T-T-S-T-T-T-S
+
+Dorian: T-S-T-T-T-S-T
+
+..and so on, and so forth.
 
 ### How to write in a mode
 
