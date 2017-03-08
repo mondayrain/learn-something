@@ -1,0 +1,62 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>Complex Tones, Fourier Analysis and The Missing Fundamental</TITLE>
+<META NAME="Template" CONTENT="C:\PROGRAM FILES\MICROSOFT OFFICE\OFFICE\html.dot">
+</HEAD>
+<BODY LINK="#0000ff" VLINK="#800080">
+
+<B><I><FONT SIZE=4><P>7.4 Complex Tones, Fourier Analysis and The Missing Fundamental</P>
+</FONT></I><P>COMPLEX TONES</P>
+</B>
+<P>So far, we have considered consonance and dissonance between pure tones. Pure 
+  tones are simple sine waves at a single frequency. No instrument produces a 
+  pure tone, but pure tones are useful in trying to understand how hearing perception 
+  works. We found that if two pure tones were separated by less than a critical 
+  bandwidth (or about a minor third) the two tones would sound dissonant or rough. 
+  If the difference were small enough (&lt; 15 Hz) you would hear beats. What 
+  was perhaps more surprising is that if the tones were separated by more than 
+  a minor third, the tones would always sound consonant. While there are many 
+  consonance intervals larger than a minor third (like the Perfect Fourth and 
+  Perfect Fifth) there are also dissonant intervals (like the seventh and the 
+  diminished intervals). How do we explain dissonance of tones that are far apart?</P>
+<P>The key is to realize that musical tones, as produced from an instrument, are 
+  not pure tones. Rather, they consist of a fundamental and harmonics, as discussed 
+  in Section 4.2. Thus, when you play an A = 440 Hz on a violin, the violin produces 
+  a frequency of 440 Hz, but in addition, it is also producing sound at 880 Hz, 
+  1320 Hz, 1760 Hz, … This is referred to as a complex tone. The relative amplitude 
+  of the different harmonics determines the tone quality or timbre of the note, 
+  but all real tones have some amount of harmonics present. In fact, producing 
+  a pure tone, even electronically, is rather difficult – it is very hard to remove 
+  all of the harmonics.</P>
+<P>So, if we are trying to determine how two complex tones will sound, we must see if any pairs of harmonics lie within a Critical Bandwidth. These pairs are analyzed in exactly the same way as pure tones were analyzed in the last section.</P>
+<P>For example, let’s consider a Perfect Fifth. If the first note is at A = 220 Hz, the second note is at E = 330 Hz. With harmonics, the following frequencies will be present:</P>
+<P>220, 440, 660, 880, 1100, 1320, 1540, …<BR>
+330, 660, 990, 1320, 1650, 1980, …</P>
+<P>Possible pairs to consider are (220,330), (330, 440), (880, 990), (990, 1100), etc. The last two pairs have are separated by less than the Critical Bandwidth, but the beat frequency is quite high (&gt;100 Hz), so the will add a small amount of dissonance, but not too much. More importantly, the two notes have a common harmonic at 660 Hz. However, this does not cause dissonance, because the difference is less than 10 Hz (in this case the difference is zero).</P>
+<P>Now let’s consider a diminished sixth. This is a Perfect Fifth plus a half step. Again, starting at 220 Hz, a diminished sixth will be at 330*(1.0595) = 350 Hz giving:</P>
+<P>220, 440, 660, 880, 1100, 1320, 1540, …<BR>
+350, 700, 1050, 1400, 1750, 2100, …</P>
+<P>Now consider the pairs (660, 700), (1050, 1100), (1320, 1400). These have beat frequencies of 40 Hz, 50 Hz, and 80 Hz. These are all in the range of roughness or dissonance. Since there are many pairs like this, the overall effect will be dissonant, and, indeed, the diminished sixth is considered to be a dissonant interval.</P>
+<B><P>FOURIER ANALYSIS AND THE MISSING FUNDAMENTAL</P>
+</B><P>The above analysis is sufficient to explain the perception of consonance and dissonance of pure and complex tones. However, it raises an interesting question about complex tones. To create a complex tone, we start with a pure tone at the pitch that we want, as 220 Hz. We then add harmonics to change the tone quality of the note – this can make the note "richer" or "brighter" or more "mellow", any of the qualities we associate with a musical tone. The question is: why does the adding of harmonics not change our perception of the <I>pitch</I> of the note – only the tone quality?</P>
+<P>The answer to this was provided in the early 1800’s by a mathematician/physicist named Fourier. What Fourier realized was that if you add a harmonic to a fundamental, the resulting wave always has the same period as the fundamental, no matter how many harmonics you add! Thus, the resultant wave always seems to have the same pitch as the fundamental, even though is can sound quite different.</P>
+<P><IMG SRC="http://www.phys.uconn.edu/~gibson/Notes/Section7_4/581x521xImage269.gif.pagespeed.ic.IeL28xRzz4.png" WIDTH=581 HEIGHT=521></P>
+<P>Although if you looked at 2f alone, you would say it has a shorter period than 
+  1f. However, 2f does repeat after a time equal to the period of the fundamental. 
+  It happens to repeat twice in that time, but it is still repeating. The same 
+  is true of 3f and all higher harmonics. Although their basic period gets shorter 
+  and shorter, all of these waves do repeat at the period of the fundamental. 
+  Thus, <I>when you add them all together, the resulting wave also repeats with 
+  a period equal to the fundamental.</I> Proving this was Fourier’s great achievement, 
+  and is called Fourier analysis in his honor. Actually, Fourier analysis is the 
+  reverse: given a complex but repeating wave, what combination of fundamental 
+  and harmonics will produce this wave?</P>
+<P>A very interesting observation follows from this discussion. Because all of the harmonics repeat with the fundamental period, the fundamental frequency does not need to be the loudest to preserve the pitch of the note. In fact, the fundamental need not be present at all! Even if the fundamental is removed from a note, the note still seems to have the same pitch.</P>
+<P>Consider the wave above, but without the fundamental:</P>
+<P><IMG SRC="http://www.phys.uconn.edu/~gibson/Notes/Section7_4/581x440xImage270.gif.pagespeed.ic.V3M694GfQT.png" WIDTH=581 HEIGHT=440></P>
+<P>Even though the fundamental was not added to the total wave, only 2f and 3f, the period of the total wave is still equal to that of the fundamental. Of course, if you played 2f alone, it would sound an octave higher than the fundamental. But if you add 3f, you will hear the pitch drop to the fundamental. This effect is called the "Missing Fundamental". Strange as it seems, there is an easy have to convince yourself that it must be correct.</P>
+<P>Imagine (or find) a piano and play middle A = 440 Hz. Then play the A one octave lower, at 220 Hz. As you listen, you would say that the pitch went down an octave. Now play the A an octave lower, at 110 Hz. Again, the pitch drops by an octave. Go down another octave to 55 Hz, and another to 27.5 Hz. Each time, you will claim to hear the pitch drop by an octave. The interesting thing is that you cannot hear a pitch of 27.5 Hz! Even 55 Hz is very hard to hear. So, although you cannot hear these low pitches, the ear is telling you that the pitch is dropping by an octave. Therefore, the brain perceives a pitch that it can’t actually hear – it fills in the "missing fundamental". In this case, the fundamental is missing because the ear does not respond to such a low frequency.</P>
+<P>More technically, the brain finds the greatest common divisor of all the harmonics that it hears. In other words, it looks for that frequency from which all the harmonics can be formed. For example, consider the series: 600, 800, 1000, 1200 Hz… If 600 Hz were considered to be the fundamental, 800 would not be a harmonic of this fundamental, and the overtone series would not make sense to the ear. The largest number that evenly divides each frequency of this series is 200 Hz. Then the series is 3f, 4f, 5f, 6f, … So, in this case, the "pitch" of the note is 200 Hz. Of course, 100 Hz also divides all of the frequencies in the series, as does 50 Hz and 25 Hz, etc. That is why we must consider the high frequency that divides all of the rest.</P></BODY>
+</HTML>
